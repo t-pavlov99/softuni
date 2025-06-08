@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.GenericCountMethodDouble
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Tuple", "07.Tuple\07.Tuple.csproj", "{EA22821B-3CBA-4879-9C00-50A4DBAF620A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.CustomDoublyLinkedList", "09.CustomDoublyLinkedList\09.CustomDoublyLinkedList.csproj", "{5BD0ECD7-63B7-1354-26FE-0C86214361B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDoublyLinkedList", "09.CustomDoublyLinkedList\CustomDoublyLinkedList.csproj", "{5BD0ECD7-63B7-1354-26FE-0C86214361B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Threeuple", "08.Threeuple\08.Threeuple.csproj", "{1E51F156-F8E5-0FF9-73CC-246A73966CF9}"
 EndProject
