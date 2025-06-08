@@ -1,4 +1,11 @@
 ﻿namespace DefiningClasses;
+
+/*
+2
+ChevroletAstro 200 180 1000 fragile 1.3 1 1.5 2 1.4 2 1.7 4
+Citroen2CV 190 165 1200 fragile 0.9 3 0.85 2 0.95 2 1.1 1
+fragile
+ */
 internal class Program
 {
     static void Main(string[] args)
