@@ -1,0 +1,30 @@
+﻿using FootballManager.Core.Contracts;
+using FootballManager.Models.Contracts;
+using FootballManager.Models;
+using FootballManager.Repositories;
+using System.Runtime.CompilerServices;
+
+internal class MyController1 : IController
+{
+    private List<Type> managerTypes;
+    private List<string> managerTypeNames;
+    private TeamRepository championship;
+    public MyController1()
+    {
+        championship = new TeamRepository();
+        managerTypes = new List<Type> { typeof(AmateurManager), typeof(SeniorManager), typeof(ProfessionalManager) };
+        managerTypeNames = new List<string> { "AmateurManager", "SeniorManager", "ProfessionalManager" };
+    }
+    private bool ValidManager(string managerTypeName)
+    {
+        return managerTypeNames.Contains(managerTypeName);
+    }
+    private IManager? CreateManager(string managerTypeName, string managerName)
+    {
+        if (!ValidManager(managerTypeName))
+            return null;
+        return (IManager)Activator.CreateInstance(
+            managerTypes.Where(x => x.Name == managerTypeName).Single(),
+            managerName);
+    }
+}
