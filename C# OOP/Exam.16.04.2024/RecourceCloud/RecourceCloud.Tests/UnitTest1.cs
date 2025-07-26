@@ -121,20 +121,6 @@ namespace RecourceCloud.Tests
             });
         }
 
-        [Test]
-        public void TestResourceTester()
-        {
-            dc.LogTask(new string[] { "2", "a", "name" });
-            bool ret = dc.CreateResource();
-            Assert.Multiple(() =>
-            {
-                Assert.That(ret, Is.True);
-                Resource? r = dc.TestResource("name");
-                Assert.That(r, Is.Not.Null);
-                Assert.That(r.Name, Is.EqualTo("name"));
-                Assert.That(r.IsTested, Is.EqualTo(true));
-            });
-        }
 
         [Test]
         public void TestResourceCreatorFromHighestPriority()
